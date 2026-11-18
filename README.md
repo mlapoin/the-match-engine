@@ -15,6 +15,17 @@ People create profiles, swipe on each other, match when the interest is mutual, 
 - Built, deployed, and maintained by one developer
 - Survived a traffic spike that exceeded the database's free-tier limits (see [Performance fixes](#performance-fixes))
 
+## Where to look
+
+If you only open a few files, start here:
+
+| File | What it shows |
+|---|---|
+| [`app/swipe/page.js`](app/swipe/page.js) | The swipe deck: the next card is always loaded underneath, plus drag-to-swipe and the stamp animations |
+| [`app/api/swipe/route.js`](app/api/swipe/route.js) | How the deck is built, including two-way filters (who you see *and* who can see you) |
+| [`app/api/matches/route.js`](app/api/matches/route.js) | The matches query, rewritten from five repeated subqueries into one `LEFT JOIN LATERAL` |
+| [`app/chat/[id]/page.js`](app/chat/%5Bid%5D/page.js) | The polling fix: pauses in hidden tabs, slower intervals, and read receipts only written when needed |
+
 ## Features
 
 - **Swipe deck** with drag and button controls. The next profile is always rendered underneath the current one, so there's never a blank moment between swipes.
