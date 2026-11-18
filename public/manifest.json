@@ -1,0 +1,22 @@
+{
+  "name": "Match Engine",
+  "short_name": "Match Engine",
+  "description": "Swipe, match, and chat.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f0eeeb",
+  "theme_color": "#fd3b6a",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

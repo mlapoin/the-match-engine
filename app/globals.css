@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  overscroll-behavior: none;
+  font-family: 'Nunito', Inter, sans-serif;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #f0eeeb;
+  --foreground: #111111;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+@keyframes stampIn {
+  from { transform: scale(0); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
